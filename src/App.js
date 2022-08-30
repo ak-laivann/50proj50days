@@ -10,10 +10,13 @@
 // import ExpandingCards from "./Expanding Cards/ExpandingCards";
 // --------------------------------------------------------------------------------------------------------------------------
 // Blurry Loading ----- uncomment only the next line
-import BlurryLoading from "./BlurryLoading/BlurryLoading";
+// import BlurryLoading from "./BlurryLoading/BlurryLoading";
 // --------------------------------------------------------------------------------------------------------------------------
 // Scrolling Animation ----- uncomment only the next line
 // import ScrollingAnimation from './ScrollingAnimation/ScrollingAnimation';
+// --------------------------------------------------------------------------------------------------------------------------
+// Wave Label ----- uncomment onnly the next line
+import WormLabel from "./WormLabel/WormLable";
 // --------------------------------------------------------------------------------------------------------------------------
 
 function App() {
@@ -21,9 +24,10 @@ function App() {
     <div>
       {/* <HiddenSearchBar /> */}
       {/* <ExpandingCards /> */}
-      <BlurryLoading />
+      {/* <BlurryLoading /> */}
       {/* <ScrollingAnimation /> */}
       {/* <SumaCards /> */}
+      <WormLabel />
     </div>
   );
 }
