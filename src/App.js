@@ -16,7 +16,13 @@
 // import ScrollingAnimation from './ScrollingAnimation/ScrollingAnimation';
 // --------------------------------------------------------------------------------------------------------------------------
 // Wave Label ----- uncomment onnly the next line
-import WormLabel from "./WormLabel/WormLable";
+// import WormLabel from "./WormLabel/WormLable";
+// --------------------------------------------------------------------------------------------------------------------------
+// API call using useEffect ----- uncomment only the next line
+// import UseEffectHookApi from "./Hooks/Hooks";
+// --------------------------------------------------------------------------------------------------------------------------
+// useReducer for counter ----- uncomment only the next line
+import UseReducerHook from "./Hooks/UseReducerHook";
 // --------------------------------------------------------------------------------------------------------------------------
 
 function App() {
@@ -27,7 +33,9 @@ function App() {
       {/* <BlurryLoading /> */}
       {/* <ScrollingAnimation /> */}
       {/* <SumaCards /> */}
-      <WormLabel />
+      {/* <WormLabel /> */}
+      {/* <UseEffectHookApi /> */}
+      <UseReducerHook />
     </div>
   );
 }
