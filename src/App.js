@@ -22,7 +22,10 @@
 // import UseEffectHookApi from "./Hooks/Hooks";
 // --------------------------------------------------------------------------------------------------------------------------
 // useReducer for counter ----- uncomment only the next line
-import UseReducerHook from "./Hooks/UseReducerHook";
+// import UseReducerHook from "./Hooks/UseReducerHook";
+// --------------------------------------------------------------------------------------------------------------------------
+// Water REMINDER ----- uncomment only the next line
+// import Cups from "./Cup/Cups";
 // --------------------------------------------------------------------------------------------------------------------------
 
 function App() {
@@ -35,7 +38,8 @@ function App() {
       {/* <SumaCards /> */}
       {/* <WormLabel /> */}
       {/* <UseEffectHookApi /> */}
-      <UseReducerHook />
+      {/* <UseReducerHook /> */}
+      {/* <Cups /> */}
     </div>
   );
 }
