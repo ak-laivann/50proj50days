@@ -28,7 +28,7 @@
 // import Cups from "./Cup/Cups";
 // --------------------------------------------------------------------------------------------------------------------------
 // Checkbox animation ----- uncomment only the next line
-import CheckBox from "./Checkbox/CheckBox";
+// import CheckBox from "./Checkbox/CheckBox";
 // --------------------------------------------------------------------------------------------------------------------------
 
 function App() {
@@ -43,7 +43,7 @@ function App() {
       {/* <UseEffectHookApi /> */}
       {/* <UseReducerHook /> */}
       {/* <Cups /> */}
-      <CheckBox />
+      {/* <CheckBox /> */}
     </div>
   );
 }

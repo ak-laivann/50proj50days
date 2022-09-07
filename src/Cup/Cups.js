@@ -1,6 +1,8 @@
 import "./Cups.css";
 
 const Cups = () => {
+  document.title = "Drink Water";
+
   const SmallCups = document.querySelectorAll(".cups-small");
 
   const percentage = document.getElementById("percentage");

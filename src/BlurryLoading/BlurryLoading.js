@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./BlurryLoading.css";
 
 const BlurryLoading = () => {
+  document.title = "Blurry Loading";
+
   const [text, setText] = useState(0);
 
   const LoadText = document.querySelector(".loading-text");

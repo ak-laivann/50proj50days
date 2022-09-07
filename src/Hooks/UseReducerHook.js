@@ -27,12 +27,14 @@ const reducer = (state, action) => {
 };
 
 function UseReducerHook() {
+  document.title = "Use reducer Hook";
+
   // since useReducer is a function it has to be called inside the function that is being exported
   // the useReducer function will take in two arguments called reducer and initialstate
   // this useReducer must be used like useState like const [state, useState] = useState
   // the reducer function returns th current state called in here as count and a disatch that executes the function reducer
   const [count, dispatch] = useReducer(reducer, initialState);
-  document.title = "hooks";
+
   return (
     <div>
       {/* under the event handler, the dispatch should be specified with the cases */}

@@ -14,6 +14,8 @@ function ForBox() {
 }
 
 const ScrollingAnimation = () => {
+  document.title = "Scrolling animation";
+
   window.addEventListener("scroll", () => checkBoxes());
 
   function checkBoxes() {

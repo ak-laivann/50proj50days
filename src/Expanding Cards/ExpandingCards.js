@@ -3,6 +3,8 @@ import React from "react";
 import "./ExpandingCards.css";
 
 const ExpandingCards = () => {
+  document.title = "Expanding Cards";
+
   const panels = document.querySelectorAll(".panel");
 
   panels.forEach((panel) => {

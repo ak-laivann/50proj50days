@@ -3,6 +3,8 @@ import React from "react";
 import "./WormLabel.css";
 
 const WormLabel = () => {
+  document.title = "Label Animation";
+
   function EventListener() {
     const labels = document.querySelectorAll(".form-control label");
 

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 function UseEffectHookApi() {
+  document.title = "Use Effect Hook Api";
+
   const [post, setPost] = useState([]);
   const [id, setId] = useState(1);
   const [idButton, setIdButton] = useState(1);
