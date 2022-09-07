@@ -27,6 +27,9 @@
 // Water REMINDER ----- uncomment only the next line
 // import Cups from "./Cup/Cups";
 // --------------------------------------------------------------------------------------------------------------------------
+// Checkbox animation ----- uncomment only the next line
+import CheckBox from "./Checkbox/CheckBox";
+// --------------------------------------------------------------------------------------------------------------------------
 
 function App() {
   return (
@@ -40,6 +43,7 @@ function App() {
       {/* <UseEffectHookApi /> */}
       {/* <UseReducerHook /> */}
       {/* <Cups /> */}
+      <CheckBox />
     </div>
   );
 }
