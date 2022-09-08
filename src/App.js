@@ -30,6 +30,12 @@
 // Checkbox animation ----- uncomment only the next line
 // import CheckBox from "./Checkbox/CheckBox";
 // --------------------------------------------------------------------------------------------------------------------------
+// Drag and Drop ----- uncomment only the next line
+// import DragDrop from "./DragNDrop/DragDrop";
+// --------------------------------------------------------------------------------------------------------------------------
+// Graph ----- uncomment only the next line
+import Graph from "./Graph/Graph";
+// --------------------------------------------------------------------------------------------------------------------------
 
 function App() {
   return (
@@ -44,6 +50,8 @@ function App() {
       {/* <UseReducerHook /> */}
       {/* <Cups /> */}
       {/* <CheckBox /> */}
+      {/* <DragDrop /> */}
+      <Graph />
     </div>
   );
 }

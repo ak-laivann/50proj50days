@@ -6,7 +6,7 @@ import React, { useReducer } from "react";
 // object as parameter - the initialState may even have an object
 const initialState = 0;
 // const initialState = { firstCounter : 0 , secondCounter : 10}
-// next define the reducer function which takes in two values a state aand an action
+// next define the reducer function which takes in two values a state and an action
 // object as parameter - the switch action will have a type which will be used in the jsx element with type pertaining to a string
 const reducer = (state, action) => {
   // object as parameter - switch (action.type)
@@ -26,7 +26,7 @@ const reducer = (state, action) => {
   }
 };
 
-function UseReducerHook() {
+const UseReducerHook = () => {
   document.title = "Use reducer Hook";
 
   // since useReducer is a function it has to be called inside the function that is being exported
@@ -47,7 +47,7 @@ function UseReducerHook() {
       <p>{count}</p>
     </div>
   );
-}
+};
 
 export default UseReducerHook;
 

@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: steelblue;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+}
+
+.fill {
+  background-image: url("https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 145px;
+  width: 145px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 7.5px;
+}
+
+.empty {
+  height: 160px;
+  width: 160px;
+  border: 2px solid black;
+  margin: 220px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.hold {
+  border: 5px solid orange;
+}
+
+.hovered {
+  border: 3px solid white;
+  border-style: dashed;
+  background-color: black;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    display: inline-block;
+  }
+}
