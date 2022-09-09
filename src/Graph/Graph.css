@@ -63,33 +63,35 @@ input {
 }
 
 .graph1 {
-  height: 400px;
+  height: 2px;
   width: 50px;
   background-color: slateblue;
   margin: 0 20px;
   position: absolute;
   bottom: 58px;
+  left: 500px;
+  transition: 3s ease;
 }
 
 .graph2 {
-  height: 400px;
+  height: 2px;
   width: 50px;
   background-color: skyblue;
   margin: 0 20px;
+  position: absolute;
+  bottom: 58px;
+  transition: 3s ease;
 }
 
 .graph3 {
-  height: 400px;
+  height: 2px;
   width: 50px;
   background-color: steelblue;
   margin: 0 20px;
-}
-
-.graph4 {
-  height: 400px;
-  width: 50px;
-  background-color: deepskyblue;
-  margin: 0 20px;
+  position: absolute;
+  bottom: 58px;
+  right: 500px;
+  transition: 3s ease;
 }
 
 button {

@@ -4,11 +4,19 @@ import "./Graph.css";
 const Graph = () => {
   document.title = "Graph";
 
-  const graph = document.querySelector(".graph1");
+  const graph1 = document.querySelector(".graph1");
+
+  const graph2 = document.querySelector(".graph2");
+
+  const graph3 = document.querySelector(".graph3");
 
   const total = document.getElementById("total");
 
   const maths = document.getElementById("maths");
+
+  const science = document.getElementById("science");
+
+  const social = document.getElementById("social");
 
   const initialState = 0;
 
@@ -27,15 +35,35 @@ const Graph = () => {
   function handleClick() {
     const Maths = Number(maths.value);
 
+    const Science = Number(science.value);
+
+    const Social = Number(social.value);
+
     const Total = Number(total.value);
 
-    const Functioon = (Maths / Total) * 400;
+    const Function1 = (Maths / Total) * 400;
+
+    const Function2 = (Science / Total) * 400;
+
+    const Function3 = (Social / Total) * 400;
 
     if (Total === 0) {
-    } else if (Functioon > 400 || false) {
-      graph.style.height = "400px";
+      graph1.style.height = "2px";
+      graph2.style.height = "2px";
+      graph3.style.height = "2px";
+      window.alert("give me a number please");
+    } else if ((Function1 >= 400) ^ (Function2 >= 400) ^ (Function3 >= 400)) {
+      graph1.style.height = "400px";
+      graph2.style.height = "400px";
+      graph3.style.height = "400px";
+    } else if (Function2 >= 400) {
+      graph2.style.height = "400px";
+    } else if (Function3 >= 400) {
+      graph3.style.height = "400px";
     } else {
-      graph.style.height = `${Functioon}px`;
+      graph1.style.height = `${Function1}px`;
+      graph2.style.height = `${Function2}px`;
+      graph3.style.height = `${Function3}px`;
     }
   }
 
@@ -58,7 +86,26 @@ const Graph = () => {
             placeholder="Enter the Maths Value"
             id="maths"
             min="0"
-            defaultValue={0}
+            onChange={(e) => handleChange(e)}
+          />
+        </div>
+
+        <div className="group">
+          <input
+            type="number"
+            placeholder="Enter the Science Value"
+            id="science"
+            min="0"
+            onChange={(e) => handleChange(e)}
+          />
+        </div>
+
+        <div className="group">
+          <input
+            type="number"
+            placeholder="Enter the Social Value"
+            id="social"
+            min="0"
             onChange={(e) => handleChange(e)}
           />
         </div>
@@ -69,7 +116,6 @@ const Graph = () => {
             placeholder="Enter the Total Value"
             id="total"
             min="0"
-            defaultValue={0}
             onChange={(e) => handleChange(e)}
           />
         </div>
@@ -78,6 +124,8 @@ const Graph = () => {
       </div>
       <div className="graph">
         <div className="graph1"></div>
+        <div className="graph2"></div>
+        <div className="graph3"></div>
       </div>
     </>
   );

@@ -1,47 +1,61 @@
 import "./DragDrop.css";
 
 const DragDrop = () => {
+  const fill = document.querySelector(".fill");
   const empties = document.querySelectorAll(".empty");
-
-  for (const empty of empties) {
-    empty.addEventListener("dragover", dragOver);
-    empty.addEventListener("dragend", dragEnd);
-    empty.addEventListener("dragenter", dragEnter);
-    empty.addEventListener("dragleave", dragLeave);
-  }
-  function dragStart() {
-    console.log("started");
+  function dragStart(e) {
+    console.log(e);
+    e.classList.add("hold");
   }
 
-  function dragEnd() {
-    console.log("ended");
+  function dragEnd(e) {
+    console.log(e);
+    e.target.classList.add("fill");
   }
 
-  function dragOver(e) {
+  function dragEnter(e) {
+    console.log(e);
     e.preventDefault();
-    console.log("over");
+    // e.target.classList.add("hovered");
   }
 
-  function dragEnter() {
-    console.log("entered");
+  function dragLeave(e) {
+    console.log(e);
+    e.target.className = "empty";
   }
 
-  function dragLeave() {
-    console.log("left");
-  }
-
-  function drop() {
+  function dragDrop(e) {
+    console.log(e);
     console.log("dropped");
+    // e.target.className = "empty";
+    empties[1].append(fill);
   }
 
   return (
     <>
       <div className="container">
-        <div className="empty">
-          <div className="fill" draggable="true"></div>
+        <div
+          className="empty"
+          onDragOver={(e) => e.preventDefault()}
+          onDragEnter={(e) => dragEnter(e)}
+          onDragLeave={(e) => dragLeave(e)}
+          onDrop={(e) => dragDrop(e)}
+        >
+          <div
+            className="fill"
+            draggable="true"
+            onDragStart={(e) => dragStart(e)}
+            onDragEnd={(e) => dragEnd(e)}
+          ></div>
         </div>
 
-        <div className="empty"></div>
+        <div
+          className="empty"
+          onDragOver={(e) => e.preventDefault()}
+          onDragEnter={(e) => dragEnter(e)}
+          onDragLeave={(e) => dragLeave(e)}
+          onDrop={(e) => dragDrop(e)}
+        ></div>
       </div>
     </>
   );
