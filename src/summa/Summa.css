@@ -1,0 +1,27 @@
+body {
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+input::placeholder {
+  color: black;
+}
+
+input {
+  background-color: transparent;
+  color: #fff;
+  width: 200px;
+  height: 10px;
+  padding: 20px;
+  letter-spacing: 2px;
+  font-size: larger;
+  margin: 20px;
+}
+
+ul {
+  list-style: none;
+}

@@ -34,7 +34,10 @@
 // import DragDrop from "./DragNDrop/DragDrop";
 // --------------------------------------------------------------------------------------------------------------------------
 // Graph ----- uncomment only the next line
-import Graph from "./Graph/Graph";
+// import Graph from "./Graph/Graph";
+// --------------------------------------------------------------------------------------------------------------------------
+// Mirage Api ----- uncomment only the next line
+import Summa from "./summa/Summa";
 // --------------------------------------------------------------------------------------------------------------------------
 
 function App() {
@@ -51,7 +54,8 @@ function App() {
       {/* <Cups /> */}
       {/* <CheckBox /> */}
       {/* <DragDrop /> */}
-      <Graph />
+      {/* <Graph /> */}
+      <Summa />
     </div>
   );
 }
