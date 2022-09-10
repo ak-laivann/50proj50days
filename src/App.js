@@ -37,7 +37,10 @@
 // import Graph from "./Graph/Graph";
 // --------------------------------------------------------------------------------------------------------------------------
 // Mirage Api ----- uncomment only the next line
-import Summa from "./summa/Summa";
+// import Summa from "./summa/Summa";
+// --------------------------------------------------------------------------------------------------------------------------
+// Git Users ----- uncomment only the next line
+// import GitUser from "./GitUser/GitUser";
 // --------------------------------------------------------------------------------------------------------------------------
 
 function App() {
@@ -55,7 +58,8 @@ function App() {
       {/* <CheckBox /> */}
       {/* <DragDrop /> */}
       {/* <Graph /> */}
-      <Summa />
+      {/* <Summa /> */}
+      {/* <GitUser /> */}
     </div>
   );
 }

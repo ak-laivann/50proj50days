@@ -1,0 +1,87 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  overflow: auto;
+  background-color: slateblue;
+}
+
+.search {
+  margin: 40px;
+  background-color: skyblue;
+  width: 100%;
+  display: flex;
+  border-radius: 20px;
+}
+
+input::placeholder {
+  color: black;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  font-size: large;
+}
+
+input {
+  background-color: transparent;
+  height: 10px;
+  padding: 20px;
+  width: 80%;
+  margin: 20px;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  font-size: large;
+  color: black;
+}
+
+button {
+  height: auto;
+  width: 20%;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  margin: 3%;
+  letter-spacing: 3px;
+  font-style: oblique;
+  font-size: large;
+}
+
+button:active {
+  transform: scale(0.8);
+  font-style: oblique;
+  font-size: large;
+}
+
+.repositories {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.userprofile {
+  display: flex;
+}
+
+img {
+  margin: 20px;
+  border-radius: 50%;
+  height: 125px;
+  width: 125px;
+}
+
+.userdetails {
+  background-color: darkslateblue;
+  padding: 40px;
+  width: 100%;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+h3 {
+  position: relative;
+  left: 70px;
+  top: 45px;
+  font-size: x-large;
+  color: burlywood;
+  letter-spacing: 2px;
+}
