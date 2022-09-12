@@ -1,0 +1,69 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: auto;
+  background-color: gainsboro;
+}
+
+.App-Name {
+  background-color: #00b386;
+  width: 100vw;
+  height: 159px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+h3 {
+  position: relative;
+  left: 20vw;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.LoginForm {
+  margin-top: 80px;
+  background-color: white;
+  padding: 40px;
+  color: dimgray;
+  z-index: 1;
+  box-shadow: 1px 1px 10px 8px gray;
+  height: 300px;
+  width: 700px;
+}
+
+input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 100%;
+  margin: 30px;
+  height: 25px;
+  width: 400px;
+  margin-left: 20%;
+}
+
+button {
+  width: 100%;
+  height: 4vw;
+  background-color: #25d366;
+  border: none;
+  font-size: larger;
+  color: whitesmoke;
+  border-radius: 8px;
+  margin: 30px auto;
+}
+
+button:active {
+  border: none;
+  transform: scale(0.95);
+}
+
+p {
+  color: #00b386;
+  font-weight: 700;
+  margin-left: 15%;
+}

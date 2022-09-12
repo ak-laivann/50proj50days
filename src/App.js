@@ -42,6 +42,9 @@
 // Git Users ----- uncomment only the next line
 // import GitUser from "./GitUser/GitUser";
 // --------------------------------------------------------------------------------------------------------------------------
+// Mock Whatsapp ----- uncomment only the next line
+import WhatsApp from "./WhatsappMock/WhatsApp";
+// --------------------------------------------------------------------------------------------------------------------------
 
 function App() {
   return (
@@ -60,6 +63,7 @@ function App() {
       {/* <Graph /> */}
       {/* <Summa /> */}
       {/* <GitUser /> */}
+      <WhatsApp />
     </div>
   );
 }

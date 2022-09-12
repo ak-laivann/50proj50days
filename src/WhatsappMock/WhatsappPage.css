@@ -1,0 +1,59 @@
+.ChatsApi {
+  display: block;
+  background-color: #111b21;
+  width: 100%;
+  height: 100vh;
+  justify-content: flex-start;
+}
+
+.chatsearch {
+  background-color: #202c33;
+  width: 230px;
+  height: 35px;
+  padding-right: 32px;
+  padding-left: 65px;
+  border: none;
+  border-radius: 8px;
+  font-size: medium;
+  letter-spacing: 1px;
+  color: white;
+  position: relative;
+  right: 50px;
+}
+
+.Profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #202c33;
+  width: 100%;
+  height: 59px;
+  box-sizing: border-box;
+  padding-top: 10px 16px;
+}
+
+.profilepic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.chatpic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+h3 {
+  font-weight: 300;
+  margin: 0 auto;
+}
+
+p {
+  color: gray;
+  font-weight: 400;
+}
+
+.chatsleft {
+  display: flex;
+}
